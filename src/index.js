@@ -95,6 +95,10 @@ app.get("/api/me", authJWT, async (req, res) => {
   res.json(user[0]);
 });
 
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from backend!" });
+});
+
 // ==========================================
 // 💸 FUND TRANSFERS (د پیسو استول)
 // ==========================================
